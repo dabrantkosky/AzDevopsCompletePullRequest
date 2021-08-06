@@ -1,0 +1,26 @@
+{
+    "id": "c0579b75-fccb-43c2-899e-9ea2b741575c",
+    "name": "CompletePR",
+    "friendlyName": "Complete Pull Request on Release",
+    "description": "Gets Pull Request ID from release artifact and completes the Pull Request",
+    "author": "Débora Abrantkosky",
+    "category": "Utility",
+    "version": {
+        "Major": "1",
+        "Minor": "0",
+        "Patch": "0"
+    },
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "minimumAgentVersion": "1.83.0",
+    "instanceNameFormat": "Complete Pull Request on Release",
+    "execution": {
+        "PowerShell3": {
+            "target": "CompletePR.ps1"}
+    }
+}

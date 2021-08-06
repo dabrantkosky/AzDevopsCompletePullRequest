@@ -1,0 +1,49 @@
+{
+    "manifestVersion": 1,
+    "id": "completepr-release",
+    "name": "Complete Pull Request on Release",
+    "version": "1.0.0",
+    "publisher": "deboraabrantkosky",
+    "public": true,
+    "categories": [
+        "Azure Pipelines",
+        "Azure Repos"
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "LICENSE.txt"
+        }
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+     "scopes": [
+        "vso.code_write"
+    ],
+    "description": "Extension for completing Pull Requests at release pipeline on Azure DevOps",
+    "icons": {
+        "default": "icon.jpg"
+    },
+    "files": [
+        {
+            "path": "CompletePR"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "completepr",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CompletePR"
+            }
+        }
+    ]
+}
